@@ -41,7 +41,7 @@ document.getElementById('temperatura-entrada').addEventListener('input', functio
 
 
             // Conversão para Fahrenheit
-                document.getElementById('saida-fahrenheit').innerHTML = ((temperatura_entrada * (9 / 5)+ 32)).toFixed(2) + " Fº"
+                document.getElementById('saida-fahrenheit').innerHTML = ((temperatura_entrada * (9 / 5)+ 32)).toFixed(2) + " F"
 
             // Conversão  para Rankine
                 document.getElementById('saida-rankine').innerHTML = ((temperatura_entrada)*(9 /5) + 491.67).toFixed(2) + " R";   
