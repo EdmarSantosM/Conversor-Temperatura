@@ -36,4 +36,8 @@ document.getElementById('temperatura-entrada').addEventListener('input', functio
         document.getElementById('saida').style.display ="inline"; // Ao digitar o valor no input é exibido novamente  os  elementos na  saida
     }
 
+    // Conversão  para Kelvin
+        document.getElementById('saida-kelvin').innerHTML = (temperatura_entrada +  273.15) + " K";
+
+
 });
