@@ -41,5 +41,8 @@ document.getElementById('temperatura-entrada').addEventListener('input', functio
 
 
     // Conversão para Fahrenheit
-        document.getElementById('saida-fahrenheit').innerHTML = (( 5/9 ) * ((temperatura_entrada ) - 32)).toFixed(2) + " Fº"
+        document.getElementById('saida-fahrenheit').innerHTML = (( 9/5 ) * ((temperatura_entrada ) + 32)).toFixed(2) + " Fº"
+
+    // Conversão  para Rankine
+        document.getElementById('saida-rankine').innerHTML = ((temperatura_entrada - 491.67)*(5 * 9)).toFixed(2) + " R";    
 });
