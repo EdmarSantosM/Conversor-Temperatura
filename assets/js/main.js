@@ -24,3 +24,12 @@ function tempLoad() {
 tempLoad();
 
 setInterval(tempLoad,5000);
+
+
+// Fazendo a  conversão  das temperaturas
+
+document.getElementById(temperatura-entrada).addEventListener('input', function(e){
+
+    
+
+});
