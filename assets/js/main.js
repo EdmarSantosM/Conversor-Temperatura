@@ -22,3 +22,5 @@ function tempLoad() {
 }
 
 tempLoad();
+
+setInterval(tempLoad,5000);
