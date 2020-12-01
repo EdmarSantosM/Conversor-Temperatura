@@ -33,16 +33,20 @@ document.getElementById('temperatura-entrada').addEventListener('input', functio
     let temperatura_entrada = parseFloat(e.target.value);
 
     if (temperatura_entrada){
-        document.getElementById('saida').style.display ="inline"; // Ao digitar o valor no input é exibido novamente  os  elementos na  saida
-    }
+                document.getElementById('saida').style.display ="inline"; // Ao digitar o valor no input é exibido novamente  os  elementos na  saida
+        
 
-    // Conversão  para Kelvin
-        document.getElementById('saida-kelvin').innerHTML = (temperatura_entrada +  273.15).toFixed(2) + " K";
+            // Conversão  para Kelvin
+                document.getElementById('saida-kelvin').innerHTML = (temperatura_entrada + 273.15).toFixed(2) + " K";
 
 
-    // Conversão para Fahrenheit
-        document.getElementById('saida-fahrenheit').innerHTML = (( 9/5 ) * ((temperatura_entrada ) + 32)).toFixed(2) + " Fº"
+            // Conversão para Fahrenheit
+                document.getElementById('saida-fahrenheit').innerHTML = ((temperatura_entrada * (9 / 5)+ 32)).toFixed(2) + " Fº"
 
-    // Conversão  para Rankine
-        document.getElementById('saida-rankine').innerHTML = ((temperatura_entrada - 491.67)*(5 * 9)).toFixed(2) + " R";    
+            // Conversão  para Rankine
+                document.getElementById('saida-rankine').innerHTML = ((temperatura_entrada)*(9 /5) + 491.67).toFixed(2) + " R";   
+        
+         }  else {
+             document.getElementById('saida').style.display = "none";
+         } 
 });
