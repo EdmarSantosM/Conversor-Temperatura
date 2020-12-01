@@ -1,6 +1,6 @@
 // Fazendo a animação do termometro
 
-function temLoad() {
+function tempLoad() {
     let temp = document.getElementById('temp');
     temp.innerHTML = "&#xf2cb;";
 
