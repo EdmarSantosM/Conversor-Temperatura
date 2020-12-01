@@ -37,7 +37,9 @@ document.getElementById('temperatura-entrada').addEventListener('input', functio
     }
 
     // Conversão  para Kelvin
-        document.getElementById('saida-kelvin').innerHTML = (temperatura_entrada +  273.15) + " K";
+        document.getElementById('saida-kelvin').innerHTML = (temperatura_entrada +  273.15).toFixed(2) + " K";
 
 
+    // Conversão para Fahrenheit
+        document.getElementById('saida-fahrenheit').innerHTML = (( 5/9 ) * ((temperatura_entrada ) - 32)).toFixed(2) + "Fº"
 });
