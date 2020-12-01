@@ -5,7 +5,7 @@ function tempLoad() {
     temp.innerHTML = "&#xf2cb;";
 
     setTimeout(function() {
-        temp.innerHTML = "&#xf2cb;";
+        temp.innerHTML = "&#xf2ca;";
     },1000);
 
     setTimeout(function() {
