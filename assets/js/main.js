@@ -28,8 +28,12 @@ setInterval(tempLoad,5000);
 
 // Fazendo a  conversão  das temperaturas
 
-document.getElementById(temperatura-entrada).addEventListener('input', function(e){
+document.getElementById('temperatura-entrada').addEventListener('input', function(e){  // Validando o input
 
-    
+    let temperatura_entrada = parseFloat(e.target.value);
+
+    if (temperatura_entrada){
+        document.getElementById('saida').style.display ="inline"; // Ao digitar o valor no input é exibido novamente  os  elementos na  saida
+    }
 
 });
