@@ -13,6 +13,7 @@ body{
 #saida{
     display: none;
     color: #222222;
+    
 }
 
 #saida, #saida-kelvin, #saida-fahrenheit, #saida-rankine{
