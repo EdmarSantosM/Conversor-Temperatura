@@ -31,5 +31,6 @@ function stop() {
 }
 
 function timer(){
-    document.getElementById('counter').innerHTML = 'teste';
+    var format = hh + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0 + ss : ss');   // Instrução ternária
+    document.getElementById('counter').innerHTML = format;
 }
