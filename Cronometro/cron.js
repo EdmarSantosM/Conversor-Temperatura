@@ -12,7 +12,7 @@ var cron;
  // Funções
 
  function start(){
-     cron = setInterval(() => {timer();}, tempo)
+     cron = setInterval(() => { timer(); }, tempo);
 
  }
 
