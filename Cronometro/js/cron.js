@@ -13,6 +13,7 @@ var cron;
  
 
  function start() {
+     stop();
      cron = setInterval(() => { timer(); }, tempo);
     
  }
