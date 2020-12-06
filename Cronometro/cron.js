@@ -28,6 +28,8 @@ function stop() {
      mm = 0;
      ss = 0;
 
+     document.getElementById('counter').innerHTML = '00:00:00';
+
 }
 
 function timer(){
