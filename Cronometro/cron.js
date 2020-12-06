@@ -11,19 +11,23 @@ var cron;
 
  // Funções
 
- function start(){
+ function start() {
      cron = setInterval(() => { timer(); }, tempo);
 
  }
 
  
- function pause(){
-     
+ function pause() {
+     clearInterval(cron);
 }
 
 
-function stop(){
-     
+function stop() {
+    clearInterval(cron)
+     hh = 0;
+     mm = 0;
+     ss = 0;
+
 }
 
 function timer(){
